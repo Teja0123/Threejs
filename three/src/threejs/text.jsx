@@ -61,7 +61,7 @@ const Text = () => {
 
 
                     const cudegeometry = new THREE.BoxGeometry(1,1,1)
-                    const cudematerial = new THREE.MeshBasicMaterial({'#4CAF50'} )
+                    const cudematerial = new THREE.MeshBasicMaterial({color:'#4CAF50'} )
                     const cude = new THREE.Mesh(cudegeometry, cudematerial)
                     scene.add(cude)
                     
