@@ -52,7 +52,7 @@ const Text = () => {
         
                 textGeometry.center()
                 
-                const textMaterial = new THREE.MeshMatcapMaterial({color:'red'});
+                const textMaterial = new THREE.MeshMatcapMaterial({color:'#FF9800'});
                 // textMaterial.wireframe= true
                 const textMesh = new THREE.Mesh(textGeometry, textMaterial);
                 scene.add(textMesh);
@@ -61,7 +61,7 @@ const Text = () => {
 
 
                     const cudegeometry = new THREE.BoxGeometry(1,1,1)
-                    const cudematerial = new THREE.MeshBasicMaterial({map:mouli } )
+                    const cudematerial = new THREE.MeshBasicMaterial({'#4CAF50'} )
                     const cude = new THREE.Mesh(cudegeometry, cudematerial)
                     scene.add(cude)
                     
@@ -81,7 +81,7 @@ const Text = () => {
 
 
                     const donutgeometry = new THREE.TorusGeometry(0.3,0.2, 20,40)
-                    const donutmaterial = new THREE.MeshBasicMaterial({color:'aqua'})
+                    const donutmaterial = new THREE.MeshBasicMaterial({color:'#3F51B5'})
                     const donut = new THREE.Mesh(donutgeometry, donutmaterial)
                     scene.add(donut)
                      
@@ -96,6 +96,7 @@ const Text = () => {
                     
 
                 }
+                scene.background = new THREE.Color('#121212')
             },
             undefined,
             (error) => {
