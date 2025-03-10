@@ -37,7 +37,7 @@ const Text = () => {
         fontLoader.load(
             'https://threejs.org/examples/fonts/helvetiker_regular.typeface.json',
             (font) => {
-                const textGeometry = new TextGeometry('MOULI CODER', {
+                const textGeometry = new TextGeometry('DESIGNING WORK', {
                     font: font,
                     size:0.5,
                     height: 0.2,
